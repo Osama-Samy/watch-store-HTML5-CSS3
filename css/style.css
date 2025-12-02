@@ -1,0 +1,1035 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------ Header --------------------- */
+.header-container{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-area1{
+    width: 85%;
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.area2-center .main-menu{
+    position: relative;
+    z-index: 10;
+}
+
+
+.area2-center .main-menu .drop-menu{
+    width: 280px;
+    padding: 15px;
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #00000070,-1px -1px 2px #00000070;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0,0);
+    z-index: 5;
+}
+
+.area2-center .main-menu:hover .drop-menu{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+.area2-center .drop-menu li{
+    display: block;
+    margin:5px 0;
+}
+
+.area2-center .drop-menu .first-li{
+    width: fit-content;
+    height: 30px;
+    margin-bottom: 10px;
+    font-weight:300;
+    border-bottom: 1px dotted #16161a;
+}
+
+.area2-center .drop-menu li a{
+    padding: 0;
+}
+
+.area2-center .drop-menu li .link-drop:hover{
+    transform: scale(1.1,1.1);
+}
+
+.left-ul li, .right-ul li{
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+.left-ul li::after, .right-ul li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    border-top: transparent;
+    border-bottom: transparent;
+    transform: scaleY(0);
+    transition: 1s;
+}
+
+.left-ul a, .right-ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.left-ul li:hover::after, .right-ul li:hover::after{
+    transform: scaleY(1);
+}
+
+.header-container hr {
+    width: 100%;
+}
+
+.header-area2{
+    width: 85%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-shop{
+    font-size: 40px;
+    color: red;
+}
+
+.area2-center li{
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+}
+
+.area2-center li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 100%;
+    border: 2px solid red;
+    border-top: transparent;
+    border-bottom: transparent;
+    transform: scaleY(0);
+    transition: 1s;
+}
+
+.area2-center li:hover::after{
+    transform: scaleY(1);
+}
+
+.area2-center li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border: 2px solid red;
+    border-left: transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transition: .7s;
+}
+
+.area2-center li:hover::before{
+    transform: scaleX(1);
+}
+
+.area2-center a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.area2-center a:hover{
+    color: red;
+}
+
+.area2-right-icon{
+    font-size: 20px;
+    margin-right: 20px;
+    color: black;
+}
+
+.area2-right-icon:hover{
+    cursor: pointer;
+}
+
+.fa-caret-down{
+    font-size: 12px;
+    color: black;
+}
+
+.header-area3{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.area3-center a{
+    text-decoration: underline;
+    color: rgb(196, 190, 190);
+    font-size: 14px;
+}
+
+.area3-center a:hover{
+    color: white;
+}
+
+/*------------------ Home --------------------- */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/home-background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home-content{
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+}
+
+.home-span{
+    color: #f00;
+    font-size: 30px;
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+.home-title{
+    padding: 0 10px;
+    font-size: 50px;
+    color: #16161a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-description{
+    width: 450px;
+    font-size: 18px;
+    color: #74706B;
+    margin:15px auto 30px;
+    padding: 0 20px;
+}
+
+.home-button{
+    background-color: #f00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.home-button:hover{
+    background-color: #c40000;
+}
+
+/*------------------ section 2 --------------------- */
+.sec2{
+    width: 85%;
+    height: 80vh;
+    margin: 50px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec2-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: row wrap;
+}
+
+.sec2-content {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.sec2-content::after {
+    content: "";
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to top,#000000,#00000005);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sec2-content img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.sec2-content:hover img {
+    transform: scale(1.1,1.1);
+} 
+
+.sec2-product {
+    width: 100%;
+    height: 28%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateY(45px);
+    transition: 1s;
+}
+
+.sec2-content:hover .sec2-product {
+    transform: translateY(0px);
+}
+
+.sec2-product a {
+    text-decoration: none;
+    color: #CEBD9C;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #CEBD9C;
+}
+
+.sec2-product a:hover {
+    letter-spacing: 1px;
+}
+
+.sec2-product h2 {
+    color: #fff;
+    margin: 15px 0 20px;
+}
+
+
+/*------------------ section 3 --------------------- */
+
+.sec3{
+    margin-top: 70px;
+    position: relative;
+    width: 85%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec3 .trending{
+    min-height: 50px;
+    border-bottom: 1px solid #16161a70;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sec3 .trending h2{
+    font-size: 35px;
+    color:#292621;
+    font-weight: 500;
+}
+
+.sec3 .trending a{
+    height: 65px;
+    margin-left: 25px;
+    color: #292621;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sec3 .trending .link-select{
+    color: #f00;
+    border-bottom: 5px solid #f00;
+}
+
+.sec3 .product-trend{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3 .product-trend div{
+    width: 24%;
+    height: 500px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    perspective: 1000px;
+}
+
+.sec3 .product-trend div img{
+    width: 100%;
+    height: 75%;
+}
+
+.sec3 .product-trend div a{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #16161a;
+}
+
+.sec3 .product-trend div:hover a{
+    color: #f00;
+}
+
+.sec3 .product-trend div p{
+    color: #16161a;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.sec3 .product-trend div:hover p{
+    opacity: 1;
+}
+
+.sec3 .product-trend div:hover p span{
+    opacity: 0.7;
+}
+
+.sec3 .product-trend div p span{
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.sec3 .product-trend div .icon{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+    z-index: 10;
+}
+
+.sec3 .product-trend div .icon a{
+    color: #16161a;
+    width: calc(100% / 3);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 28px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: 1s;
+}
+
+.sec3 .product-trend div:hover .icon a{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sec3 .product-trend div .icon a:hover{
+    background: #f00;
+    color: #fff;
+
+}
+
+.sec3 .product-trend > div::after{
+    content: "";
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: url(../images/sec2-woman-watch-2.jpg);
+    background-size: cover;
+    backface-visibility: hidden;
+    transform: translateY(-20%) rotateY(180deg);
+    transition: 1s;
+    transform-style: preserve-3d;
+
+}
+
+.sec3 .product-trend > div:hover::after{
+    transform: rotateY(0deg);
+}
+
+.sec3 > a{
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.7;
+    color: #16161a;
+}
+
+.sec3 > a:hover{
+    opacity: 1;
+}
+
+.sec3 .left{
+    top: 50%;
+    left: -25px;
+}
+
+.sec3 .right{
+    top: 50%;
+    right: -25px;
+}
+
+.product-trend a{
+    text-decoration: none;
+}
+
+/*------------------ section 4 --------------------- */
+
+.sec4{
+    width: 100%;
+    height: 500px;
+}
+
+.sec4-content{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: rgb(242, 255, 254);
+}
+
+.sec4-title{
+    font-size: 36px;
+    color: #16161a;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec4-user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sec4-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+
+.sec4-center{
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sec4-left, .sec4-right{
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: auto;
+}
+
+.sec4-user{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4-user-info{
+    margin: 0 15px;
+}
+
+.sec4-user-info h3{
+    font-size: 18px;
+    color: #16161a;
+    margin-bottom: 5px;
+}
+
+.sec4-user-info span{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*------------------ section 5 --------------------- */
+
+.sec5{
+    margin-top: 70px;
+    position: relative;
+    width: 85%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec5 h2{
+    font-size: 35px;
+    color:#292621;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sec5 .sec5-card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.sec5 .sec5-card div{
+    width: 24%;
+    height: 500px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    perspective: 1000px;
+}
+
+.sec5 .sec5-card div img{
+    width: 100%;
+    height: 75%;
+}
+
+.sec5 .sec5-card div a{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #16161a;
+}
+
+.sec5 .sec5-card div:hover a{
+    color: #f00;
+}
+
+.sec5 .sec5-card div p{
+    color: #16161a;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.sec5 .sec5-card div:hover p{
+    opacity: 1;
+}
+
+.sec5 .sec5-card div:hover p span{
+    opacity: 0.7;
+}
+
+.sec5 .sec5-card div p span{
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.sec5 .sec5-card div .icon{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+    z-index: 10;
+}
+
+.sec5 .sec5-card div .icon a{
+    color: #16161a;
+    width: calc(100% / 3);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 28px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: 1s;
+}
+
+.sec5 .sec5-card div:hover .icon a{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sec5 .sec5-card div .icon a:hover{
+    background: #f00;
+    color: #fff;
+}
+
+.sec5 .sec5-card div::after{
+    content: "";
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: url(../images/sec2-woman-watch-2.jpg);
+    background-size: cover;
+    backface-visibility: hidden;
+    transform: translateY(-80%);
+    transition: 1s;
+    transform-style: preserve-3d;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sec5 .sec5-card > div:hover::after{
+    transform: rotateY(0deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+.sec5 > a{
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.7;
+    color: #16161a;
+}
+
+.sec5 > a:hover{
+    opacity: 1;
+}
+
+.sec5 .left{
+    top: 50%;
+    left: -25px;
+}
+
+.sec5 .right{
+    top: 50%;
+    right: -25px;
+}
+
+.sec5-card a{
+    text-decoration: none;
+}
+
+/*------------------ section 6 --------------------- */
+
+.sec6 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(242, 255, 254);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec6 h2 {
+    font-size: 36px;
+    color: #16161a;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.sec6-images {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.sec6-images div{
+    width: 30%;
+    height: 350px;
+}
+
+.sec6-images img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.sec6-images img:hover{
+    transform: scale(1.05);
+}
+
+.sec6-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.sec6-content div {
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.sec6-content div span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sec6-content div a {
+    font-size: 18px;
+    color: black;
+    transition: .2s;
+}
+
+.sec6-content div:hover h3{
+    color: red;
+}
+
+.sec6-content div a:hover {
+    transform: scale(1.03);
+}
+
+/*------------------ section 7 --------------------- */
+.sec7 {
+    width: 100%;
+    height: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec7-content {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec7-content div {
+    width: 25%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.sec7-icon1 {
+    font-size: 60px;
+    color: rgba(110, 110, 110, 0.5);
+    margin-bottom: 15px;
+    position: absolute;
+}
+
+.sec7-icon2 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.sec7-content div .fa-solid:hover .sec7-icon1 {
+    visibility: hidden;
+}
+
+.sec7-content div:hover .sec7-icon2 {
+    visibility: visible;
+}
+
+.sec7-content div h3 {
+    font-size: 20px;
+    color: #16161a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sec7-icons {
+    margin: auto;
+}
+
+.sec7-content div p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    text-align: center;
+}
+
+/*------------------ Footer --------------------- */
+
+.last-sec {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.94);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.last-sec-container {
+    width: 85%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.last-sec-container hr {
+    width: 100%;
+    border: 0.8px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.last-sec-area1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.last-sec-area1-left h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.last-sec-area1-left p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+.last-sec-area1-center{
+    width: 40%;
+}
+
+.last-sec-area1-center input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.last-sec-area1-center input::placeholder {
+    color: #999;
+}
+
+.last-sec-area1-center button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.last-sec-area1-center button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.1);
+}
+
+.last-sec-area1-right a {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.last-sec-area1-right a:hover {
+    color: #ff6b6b;
+    transform: scale(1.1);
+}
+
+.last-sec-area2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.last-sec-area2 .area2-logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.last-sec-area2 .area2-logo span {
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.last-sec-area2 .area2-logo .fa-shop {
+    color: #ff0404;
+    font-size: 50px;
+}
+
+.last-sec-area2 .area2-div {
+    height: 150px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.last-sec-area2 .area2-div h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.last-sec-area2 .area2-div a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.last-sec-area2 .area2-div a:hover {
+    color: #fffafa;
+    transform: scale(1.05);
+}
+
+.last-sec-area3 {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-sec-area3 p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+}
