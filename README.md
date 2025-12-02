@@ -81,8 +81,7 @@ cd watch-store-HTML5-CSS3
 ## 🙌 Author
 
 **Osama Samy**
-🔗 GitHub: [https://github.com/Osama-Samy](https://github.com/Osama-Samy)
-
+🔗 GitHub Live: https://osama-samy.github.io/watch-store-HTML5-CSS3/
 ---
 
 ## ⭐ Show Your Support
@@ -92,12 +91,3 @@ If you like this project, feel free to:
 * ⭐ Star the repository
 * 🍴 Fork it
 * 💬 Share feedback
-
----
-
-If you'd like, I can also create:
-✔ project banner
-✔ preview images
-✔ a more advanced README with GIF animations
-
-Just tell me!
